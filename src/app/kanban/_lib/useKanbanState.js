@@ -18,7 +18,7 @@ export function useKanbanState() {
   const [modalMode, setModalMode] = useState(null); // "create" | "edit" | null
   const [modalTask, setModalTask] = useState(createEmptyTask());
 
-  // 🔄 localStorage থেকে লোড
+  // load from local storage
   useEffect(() => {
     if (typeof window === "undefined") return;
 
@@ -114,14 +114,14 @@ export function useKanbanState() {
       );
     }
 
-    // ❌ এখানে আর closeModal নয়, close করবে TaskModal নিজে
+
   };
 
   const deleteModalTask = () => {
     if (!modalTask.id) return;
     setTasks((prev) => prev.filter((task) => task.id !== modalTask.id));
 
-    // এটাও modal নিজে বন্ধ করবে, তাই এখানে closeModal লাগবে না
+    
   };
 
   // drag & drop
