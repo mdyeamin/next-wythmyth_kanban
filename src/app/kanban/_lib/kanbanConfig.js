@@ -21,8 +21,8 @@ export const TAG_OPTIONS = [
 export const ASSIGNEES = [
   { id: "rayhun", name: "Rayhun" },
   { id: "sakib", name: "Sakib" },
-  { id: "Yeamin", name: "Yeamin" },
-  { id: "Rimon Mridha", name: "Rimon Mridha" },
+  { id: "yeamin", name: "Yeamin" },
+  { id: "timon mridha", name: "Rimon Mridha" },
 ];
 
 // static avatar image
